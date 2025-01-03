@@ -33,7 +33,7 @@ public class ProdotoApplication {
 	public WebMvcConfigurer webc() { 
 		return new WebMvcConfigurer() {
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedHeaders("*").allowedMethods("*").allowedOrigins("http://localhost:5173","http://localhost:5173/","https://prodoto.netlify.app/").allowCredentials(true).allowPrivateNetwork(true);
+				registry.addMapping("/**").allowedHeaders("*").allowedMethods("*").allowedOrigins("http://localhost:5173","http://localhost:5173/","https://prodoto.netlify.app/","https://prodoto.vercel.app/").allowCredentials(true).allowPrivateNetwork(true);
 				
 			}
 		};
