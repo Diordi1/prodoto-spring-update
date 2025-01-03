@@ -49,9 +49,6 @@ public class jwtFilter extends OncePerRequestFilter{
 			
 			
 			
-		}else {
-			System.out.println("not possi");
-			
 		}
 		doFilter(request, response, filterChain);
 //		doFilterInternal(request, response, filterChain);
